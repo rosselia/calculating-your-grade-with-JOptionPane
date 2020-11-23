@@ -1,0 +1,37 @@
+import javax.swing.*;
+import import javax.swing.JOptionPane;
+
+public class average {
+
+
+    public static void main(String[] args) {
+        String midterm_string = JOptionPane.showInputDialog("enter student mid-term score");
+        double midterm = Double.parseDouble(midterm_string);
+
+        String quiz_string = JOptionPane.showInputDialog("enter student quiz score");
+        double quiz = Double.parseDouble(quiz_string);
+
+        String finalexam_string = JOptionPane.showInputDialog("enter student final exam score");
+        double finalexam = Double.parseDouble(finalexam_string);
+
+        double avgscore = (midterm * 0.30) + (quiz * 0.10) + (finalexam * 0.60);
+        JOptionPane.showMessageDialog(null,"average Score is   " + avgscore);
+
+        if (avgscore >= 90 && avgscore <= 100)
+            System.out.println("your grade is A");
+        else if (avgscore < 90 && avgscore >= 80)
+            System.out.println("your grade is B");
+        else if (avgscore < 80 && avgscore >= 70)
+            System.out.println("your grade is C");
+        else if (avgscore < 70 && avgscore >= 60)
+            System.out.println("your grade is D");
+        else if (avgscore < 60 && avgscore >= 50)
+            System.out.println("your grade is E");
+        else if (avgscore <= 50)
+            System.out.println("your grade is F");
+        else
+            System.out.println("you entered a wrong number");
+
+
+    }
+}
