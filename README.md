@@ -1,1 +1,1 @@
-# calculating-your-grade-with-JOptionPane
+# calculating-your-average-grade-with-JOptionPane
